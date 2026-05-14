@@ -896,3 +896,203 @@
   }
 
 }
+
+@media (max-width: 768px) {
+
+  /* =========================
+     1. HERO TITLE + DESCRIPTION GAP
+  ========================= */
+  .hero h1{
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .hero p{
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  /* =========================
+     2. ORDER SECTION / FORM MORE COMPACT
+  ========================= */
+  .order-form{
+    padding: 14px !important;
+  }
+
+  .product-summary{
+    padding: 10px !important;
+  }
+
+  .summary-header{
+    font-size: 15px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+  }
+
+  /* =========================
+     3. "কেন এটি সবার পছন্দ?" FEATURE SECTION
+  ========================= */
+  .feature-card{
+    padding: 18px !important;
+  }
+
+  .feature-card h3{
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+
+  .feature-card p{
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  /* =========================
+     4. BEFORE VS AFTER SECTION
+  ========================= */
+  .ba-card{
+    padding: 18px !important;
+  }
+
+  .ba-card h3{
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .ba-card p{
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  /* =========================
+     5. CUSTOMER REVIEW SECTION
+  ========================= */
+  .review-card{
+    padding: 16px !important;
+  }
+
+  .review-card p{
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 6px 0;
+  }
+
+  .review-card strong{
+    font-size: 13px;
+  }
+
+  /* =========================
+     6. PRICING SECTION + DELIVERY TEXT
+  ========================= */
+  .pricing-box{
+    padding: 18px !important;
+  }
+
+  .pricing-box h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* delivery line small text fix */
+  .pricing-box h5{
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  #deliveryNote{
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* BEFORE VS AFTER EXTRA COMPACT FIX */
+  .ba-grid {
+    gap: 12px !important;
+  }
+
+  .ba-card {
+    padding: 14px !important;
+  }
+
+  .ba-card h3 {
+    margin-bottom: 6px !important;
+  }
+
+  .ba-card p {
+    margin: 0 !important;
+    line-height: 1.2;
+  }
+
+}
+/* =========================
+   PRICING TEXT GAP FIX
+========================= */
+
+.pricing-box{
+  line-height: 1.3; /* main line spacing control */
+}
+
+.pricing-box h2{
+  margin-bottom: 8px !important;
+  line-height: 1.2;
+}
+
+.pricing-box h5{
+  margin-bottom: 6px !important;
+  line-height: 1.3;
+}
+
+.pricing-box p{
+  margin-bottom: 6px !important;
+  line-height: 1.3;
+}
+
+.pricing-box .summary-row{
+  margin-bottom: 6px !important;
+  line-height: 1.2;
+}
+
+/* =========================
+   🔥 GLOBAL MOBILE SECTION GAP CONTROL (FINAL FIX)
+========================= */
+
+@media (max-width:768px){
+
+  /* ALL SECTIONS UNIFORM TIGHT GAP */
+  section{
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  /* extra safety override (already applied ones cancel) */
+  .pricing,
+  .faq,
+  .features,
+  .reviews,
+  .gallery,
+  .video-section,
+  .before-after,
+  .order{
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+
+  /* section title extra gap remove */
+  .section-title{
+    margin-bottom: 14px !important;
+  }
+
+  /* last element bottom gap reduce feel */
+  .container > *:last-child{
+    margin-bottom: 0 !important;
+  }
+
+  /* hero tighter */
+  .hero{
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+}
