@@ -4,11 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pencilwood - Smart Rotating Spice Jar</title>
+    <title>Pencilwood - Smart Rotating Masala Dani</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css?v=1">
     <script src="env.js?v=1"></script>
@@ -504,22 +503,32 @@
 
       </section>
 
-      <section class="order" id="orderSection">
-        <div class="container">
+      <div class="order-modal" id="orderModal">
+        <div class="order-modal-overlay"></div>
+        <div class="order-modal-content">
+          <!-- CLOSE BUTTON -->
+          <button class="order-modal-close" id="closeOrderModal">
+            ✕
+          </button>
+
           <div class="section-title">
-            <h2>অর্ডার করুন</h2>
+            <h2 style="margin-bottom: 0px;">অর্ডার করুন</h2>
           </div>
 
           <form class="order-form" id="orderForm">
+
             <div class="input-group">
               <input type="text" id="name" placeholder="আপনার নাম">
             </div>
+
             <div class="input-group">
               <input type="text" id="phone" placeholder="মোবাইল নাম্বার">
             </div>
+
             <div class="input-group">
               <textarea id="address" placeholder="সম্পূর্ণ ঠিকানা"></textarea>
             </div>
+
             <div class="input-group">
               <select id="deliverydistrict">
                 <option value="">জেলা নির্বাচন করুন</option>
@@ -528,49 +537,61 @@
 
             <div class="input-group">
               <select id="quantity">
-                <option value="1">
-                  ১ পিস
-                </option>
-                <option value="2">
-                  ২ পিস
-                </option>
-                <option value="3">
-                  ৩ পিস
-                </option>
+
+                <option value="1">১ পিস</option>
+                <option value="2">২ পিস</option>
+                <option value="3">৩ পিস</option>
+
               </select>
             </div>
 
             <div class="input-group">
-              <textarea id="note" placeholder="অর্ডার সম্পর্কিত কোনো নোট থাকলে লিখুন (optional)"></textarea>
+              <textarea id="note"
+                placeholder="অর্ডার সম্পর্কিত কোনো নোট থাকলে লিখুন (optional)">
+              </textarea>
             </div>
 
+            <!-- SUMMARY -->
             <div class="product-summary">
+
               <div class="summary-header">
                 অর্ডার সামারি
               </div>
 
               <div class="summary-body">
+
                 <div class="summary-row">
                   <span>প্রোডাক্ট</span>
                   <span id="productTotal">1490৳</span>
                 </div>
+
                 <div class="summary-row">
                   <span>ডেলিভারি</span>
                   <span id="summaryDelivery">0৳</span>
                 </div>
+
                 <div class="summary-row total">
                   <span>মোট</span>
                   <span id="summaryTotal">1490৳</span>
                 </div>
+
               </div>
+
             </div>
 
-            <button id="submitBtn" class="btn btn-primary" style="width:100%;">
+            <button id="submitBtn"
+              class="btn btn-primary"
+              style="width:100%;">
+
               🛒 অর্ডার কনফার্ম করুন
+
             </button>
+
           </form>
         </div>
-      </section>
+      </div>
+
+
 
       <div class="sticky-buy">
         <h3>
@@ -590,6 +611,7 @@
 
     <script src="js/main.js?v=1"></script>
     <script src="js/marketing.js?v=1"></script>
+    <script src="js/orderModal.js?v=1"></script>
     
   </body>
 </html>

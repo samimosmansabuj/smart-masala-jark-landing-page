@@ -75,98 +75,98 @@ a {
    BREAKING NEWS TOPBAR
 ========================= */
 
-.topbar{
-  position:sticky;
-  top:0;
-  z-index:9999;
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 
-  height:48px;
+  height: 48px;
 
-  background:#2B1D16;
+  background: #2B1D16;
 
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 
-  overflow:hidden;
+  overflow: hidden;
 
-  border-bottom:1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* left badge */
-.topbar-label{
-  background:#D9A441;
-  color:#fff;
+.topbar-label {
+  background: #D9A441;
+  color: #fff;
 
-  height:100%;
+  height: 100%;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  padding:0 18px;
+  padding: 0 18px;
 
-  font-size:14px;
-  font-weight:700;
+  font-size: 14px;
+  font-weight: 700;
 
-  flex-shrink:0;
+  flex-shrink: 0;
 
-  box-shadow:0 0 15px rgba(0,0,0,0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 /* marquee area */
-.topbar-marquee{
-  flex:1;
-  overflow:hidden;
-  position:relative;
+.topbar-marquee {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
 }
 
 /* moving track */
-.topbar-track{
-  display:flex;
-  align-items:center;
-  gap:60px;
+.topbar-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
 
-  width:max-content;
+  width: max-content;
 
-  white-space:nowrap;
+  white-space: nowrap;
 
-  color:#fff;
+  color: #fff;
 
-  font-size:14px;
-  font-weight:600;
+  font-size: 14px;
+  font-weight: 600;
 
-  padding-left:40px;
+  padding-left: 40px;
 
-  animation:topbarScroll 22s linear infinite;
+  animation: topbarScroll 22s linear infinite;
 }
 
 /* ticker animation */
-@keyframes topbarScroll{
-  from{
-    transform:translateX(0);
+@keyframes topbarScroll {
+  from {
+    transform: translateX(0);
   }
 
-  to{
-    transform:translateX(-50%);
+  to {
+    transform: translateX(-50%);
   }
 }
 
 /* mobile */
-@media(max-width:768px){
+@media(max-width:768px) {
 
-  .topbar{
-    height:42px;
+  .topbar {
+    height: 42px;
   }
 
-  .topbar-label{
-    font-size:12px;
-    padding:0 12px;
+  .topbar-label {
+    font-size: 12px;
+    padding: 0 12px;
   }
 
-  .topbar-track{
-    gap:40px;
-    font-size:12px;
-    padding-left:20px;
+  .topbar-track {
+    gap: 40px;
+    font-size: 12px;
+    padding-left: 20px;
   }
 
 }
@@ -253,7 +253,8 @@ a {
 .old-price {
   text-decoration: line-through;
   color: #777;
-  font-size: 22px;
+  font-size: 35px;
+  font-family: auto;
 }
 
 .new-price {
@@ -308,7 +309,6 @@ a {
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .section-title h2 {
@@ -399,25 +399,25 @@ a {
   text-align: center;
 }
 
-.video-wrapper{
-  width:100%;
-  max-width:420px;
-  margin:auto;
+.video-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
 
-  border-radius:22px;
-  overflow:hidden;
+  border-radius: 22px;
+  overflow: hidden;
 
-  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 
-  position:relative;
+  position: relative;
 }
 
-.video-wrapper iframe{
-  width:100%;
-  aspect-ratio:9/16;
-  height:auto;
-  display:block;
-  border:none;
+.video-wrapper iframe {
+  width: 100%;
+  aspect-ratio: 9/16;
+  height: auto;
+  display: block;
+  border: none;
 }
 
 iframe {
@@ -566,17 +566,16 @@ iframe {
 /* =========================
      ORDER
   ========================= */
-
 .order {
   padding: 80px 0;
 }
 
 .order-form {
   background: white;
-  padding: 40px;
   border-radius: 25px;
   max-width: 700px;
   margin: auto;
+  margin-top: 10px;
 }
 
 .input-group {
@@ -649,6 +648,9 @@ select {
   font-weight: 900;
   color: #7A5230;
 }
+
+
+
 
 /* =========================
      STICKY
@@ -909,10 +911,6 @@ footer {
   /* =========================
      ORDER FORM SPACING FIX
   ========================= */
-  .order-form {
-    padding: 20px;
-  }
-
   .input-group {
     margin-bottom: 12px;
   }
@@ -944,11 +942,6 @@ footer {
   /* =========================
      ORDER FORM COMPACT FIX
   ========================= */
-
-  .order-form {
-    padding: 16px;
-  }
-
   .input-group {
     margin-bottom: 10px;
   }
@@ -993,7 +986,7 @@ footer {
   }
 
   .old-price {
-    font-size: 18px;
+    font-size: 28px;
     display: block;
   }
 
@@ -1020,32 +1013,6 @@ footer {
   .hero {
     padding-top: 25px !important;
     padding-bottom: 25px !important;
-  }
-
-  /* =========================
-     SECTION TITLE GAP FIX
-  ========================= */
-
-  .section-title {
-    margin-bottom: 20px;
-    /* was 50px */
-  }
-
-  .section-title h2 {
-    margin-bottom: 8px;
-  }
-
-  /* =========================
-     ORDER HEADING → FORM GAP FIX
-  ========================= */
-
-  .order .section-title {
-    margin-bottom: 10px;
-    /* main fix */
-  }
-
-  .order-form {
-    margin-top: 0 !important;
   }
 
   /* =========================
@@ -1083,10 +1050,6 @@ footer {
   /* =========================
      2. ORDER SECTION / FORM MORE COMPACT
   ========================= */
-  .order-form {
-    padding: 14px !important;
-  }
-
   .product-summary {
     padding: 10px !important;
   }
@@ -1250,11 +1213,6 @@ footer {
     padding-bottom: 28px !important;
   }
 
-  /* section title extra gap remove */
-  .section-title {
-    margin-bottom: 14px !important;
-  }
-
   /* last element bottom gap reduce feel */
   .container>*:last-child {
     margin-bottom: 0 !important;
@@ -1274,81 +1232,79 @@ footer {
    PREMIUM LOADING / ERROR SCREEN
 ========================= */
 
-.product-error{
-  position:fixed;
-  inset:0;
+.product-error {
+  position: fixed;
+  inset: 0;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background: radial-gradient(circle at top, #fff7f0, #f7f1eb 60%, #efe3d8);
 
-  z-index:999999;
+  z-index: 999999;
 
-  text-align:center;
+  text-align: center;
 
-  animation:fadeIn .4s ease;
+  animation: fadeIn .4s ease;
 }
 
 /* box */
-.error-box{
-  padding:40px 30px;
-  border-radius:24px;
+.error-box {
+  padding: 40px 30px;
+  border-radius: 24px;
 
-  background:rgba(255,255,255,0.6);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.08),
-    inset 0 1px 0 rgba(255,255,255,0.4);
+    0 20px 60px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
 
-  max-width:320px;
-  width:90%;
+  max-width: 320px;
+  width: 90%;
 
-  animation:float 2.5s ease-in-out infinite;
+  animation: float 2.5s ease-in-out infinite;
 }
 
 /* main title */
-.error-box h2{
-  font-size:22px;
-  font-weight:800;
-  color:#2B1D16;
-  margin-top:18px;
+.error-box h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2B1D16;
+  margin-top: 18px;
 }
 
 /* subtitle */
-.error-box p{
-  margin-top:8px;
-  font-size:14px;
-  color:#5B4B43;
-  font-weight:500;
+.error-box p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #5B4B43;
+  font-weight: 500;
 }
 
 /* extra small text */
-.sub-text{
-  margin-top:10px;
-  font-size:12px;
-  color:#8a6f61;
+.sub-text {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8a6f61;
 }
 
 /* =========================
    SPINNER (premium ring)
 ========================= */
 
-.spinner-ring{
-  width:70px;
-  height:70px;
+.spinner-ring {
+  width: 70px;
+  height: 70px;
 
-  border-radius:50%;
+  border-radius: 50%;
 
-  background: conic-gradient(
-    from 0deg,
-    #7A5230,
-    #D9A441,
-    #7A5230
-  );
+  background: conic-gradient(from 0deg,
+      #7A5230,
+      #D9A441,
+      #7A5230);
 
   -webkit-mask:
     radial-gradient(farthest-side, transparent calc(100% - 8px), black 0);
@@ -1356,47 +1312,179 @@ footer {
   mask:
     radial-gradient(farthest-side, transparent calc(100% - 8px), black 0);
 
-  animation:spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 
-  margin:auto;
+  margin: auto;
 }
 
 /* =========================
    ANIMATIONS
 ========================= */
 
-@keyframes spin{
-  to{
-    transform:rotate(360deg);
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@keyframes float{
-  0%,100%{
-    transform:translateY(0px);
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
   }
-  50%{
-    transform:translateY(-6px);
+
+  50% {
+    transform: translateY(-6px);
   }
 }
 
-@keyframes fadeIn{
-  from{
-    opacity:0;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  to{
-    opacity:1;
+
+  to {
+    opacity: 1;
   }
 }
 
 /* mobile */
-@media(max-width:768px){
-  .error-box{
-    padding:30px 20px;
+@media(max-width:768px) {
+  .error-box {
+    padding: 30px 20px;
   }
 
-  .error-box h2{
-    font-size:18px;
+  .error-box h2 {
+    font-size: 18px;
   }
 }
 
+
+
+/* =========================
+   ORDER MODAL
+========================= */
+.order-modal {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: .3s ease;
+
+  z-index: 999999;
+}
+
+/* active */
+.order-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* dark overlay */
+.order-modal-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* modal box */
+.order-modal-content {
+  position: relative;
+
+  width: 95%;
+  max-width: 720px;
+
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: #fff;
+
+  border-radius: 28px;
+
+  padding: 28px;
+
+  z-index: 2;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.18);
+
+  animation: modalUp .3s ease;
+}
+
+/* close button */
+.order-modal-close {
+  position: absolute;
+
+  top: 11px;
+  right: 16px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f5f5f5;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: .25s ease;
+}
+
+.order-modal-close:hover {
+  background: #eee;
+  transform: rotate(90deg);
+}
+
+/* animation */
+@keyframes modalUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* mobile */
+@media(max-width:768px) {
+
+  .order-modal-content {
+    height: 80%;
+    position: relative;
+    border-radius: 24px;
+    width: 95%;
+    max-height: 100vh;
+    padding: 18px;
+    bottom: 0;
+    animation: mobileModal .3s ease;
+  }
+
+  @keyframes mobileModal {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+}

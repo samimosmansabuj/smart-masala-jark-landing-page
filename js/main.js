@@ -364,7 +364,6 @@ document.addEventListener('mouseleave', () => {
 });
 
 function closePopup() {
-
     const popup =
         document.getElementById('popup');
 
@@ -374,22 +373,6 @@ function closePopup() {
 
 }
 
-// =========================
-// Scroll To Order
-// =========================
-
-document.querySelectorAll(".orderNowBtn")
-    .forEach(btn => {
-        btn.addEventListener("click", () => {
-            FacebookAddToCartEvent(PRODUCT_DATA.id, PRODUCT_DATA.name, PRODUCT_DATA.discount_price);
-            document.getElementById("orderSection")
-                .scrollIntoView({
-                    behavior: "smooth"
-                });
-
-        });
-
-    });
 
 // =========================
 // Order Submit
@@ -491,11 +474,11 @@ document.getElementById("orderForm")
             );
             const data = await response.json();
             if (data.success) {
+                closeModal();
                 FacebookPurchaseEvent(getProductJsonForEventSend(), getTotalAmount());
+
                 // =========================
                 // FIXED SUCCESS MODAL
-                // =========================
-
                 const overlay = document.createElement("div");
                 overlay.style.position = "fixed";
                 overlay.style.inset = "0";
@@ -535,6 +518,7 @@ document.getElementById("orderForm")
 
                 overlay.appendChild(card);
                 document.body.appendChild(overlay);
+                // =========================
 
                 // countdown
                 let count = 5;
