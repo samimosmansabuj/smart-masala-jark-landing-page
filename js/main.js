@@ -544,3 +544,48 @@ document.getElementById("orderForm")
         submitBtn.innerHTML = "🛒 অর্ডার কনফার্ম করুন";
     });
 
+
+
+
+
+const iframe = document.querySelector("iframe");
+function enableSound() {
+  iframe.src = iframe.src.replace("mute=1", "mute=0");
+}
+document.getElementById("ShowVideo").addEventListener("click", function () {
+    enableSound();
+    document.querySelector(".video-section").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+});
+// const videoSection = document.querySelector(".video-section");
+// const video = document.getElementById("productVideo");
+// const videoSrc = video.src;
+
+// function playVideo() {
+//   if (!video.src.includes("autoplay=1")) {
+//     video.src = videoSrc + "&autoplay=1&mute=1";
+//   }
+// }
+
+// // Button click
+// document.getElementById("ShowVideo").addEventListener("click", function () {
+//   videoSection.scrollIntoView({ behavior: "smooth" });
+
+//   setTimeout(() => {
+//     playVideo();
+//   }, 800);
+// });
+
+// // Scroll detect (video section এ আসলে)
+// window.addEventListener("scroll", function () {
+//   const rect = videoSection.getBoundingClientRect();
+
+//   if (rect.top < window.innerHeight && rect.bottom > 200) {
+//     playVideo();
+//   }
+// });
+
+
+
