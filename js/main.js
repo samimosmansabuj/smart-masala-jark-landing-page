@@ -75,6 +75,7 @@ function showProductError() {
         if (response_data.status) {
             document.getElementById("main_content").style.display = "block";
             PRODUCT_DATA = response_data.data.product[0];
+            PRODUCT_DATA["productTitle"] = response_data.data.title
             setupProductData();
             setupGallery();
             updateSummary();
@@ -90,7 +91,7 @@ function showProductError() {
 function setupProductData() {
     FacebookViewContentEvent(PRODUCT_DATA.name, PRODUCT_DATA.discount_price, PRODUCT_DATA.id);
 
-    document.getElementById("productTitle").textContent = PRODUCT_DATA.name;
+    document.getElementById("productTitle").textContent = PRODUCT_DATA.productTitle;
 
     if (PRODUCT_DATA.short_description) {
         document.getElementById("productDescription").innerHTML = PRODUCT_DATA.short_description;
